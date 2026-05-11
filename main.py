@@ -17,3 +17,4 @@ if __name__ == '__main__':
 # 2x shift wyszukiwarka
 # wheel - kółko myszy
 # theme - skórki
+# https://github.com/rajkonkret/PythonProjectPodstawy_11_05_2026/blob/master/main.py
