@@ -26,6 +26,7 @@ print("Używamy wersji Pythona %.2f" % 3.9)  # Używamy wersji Pythona 3.90
 print("Używamy wersji Pythona %.1f" % 3.9)  # Używamy wersji Pythona 3.9
 # zaokrągla przy wyświetlaniu
 print("Używamy wersji Pythona %.0f" % 3.9)  # Używamy wersji Pythona 4
+print("Używamy wersji Pythona %.f" % 3.9)  # Używamy wersji Pythona 4
 
 x = 3.8769
 print(x)
@@ -36,3 +37,9 @@ print(type(y))  # <class 'int'>
 z = round(x, 2)
 print(f"{z=}")  # z=3.88
 print(type(z))  # <class 'float'>
+
+print(f'Używamy wersji Pythona {wersja}')  # Używamy wersji Pythona 3.90001
+print(f'Używamy wersji Pythona {wersja:.2f}')  # Używamy wersji Pythona 3.90
+print(f'Używamy wersji Pythona {wersja:.1f}')  # Używamy wersji Pythona 3.9
+print(f'Używamy wersji Pythona {wersja:.0f}')  # Używamy wersji Pythona 4
+# print(f'Używamy wersji Pythona {wersja:.f}') # ValueError: Format specifier missing precision
