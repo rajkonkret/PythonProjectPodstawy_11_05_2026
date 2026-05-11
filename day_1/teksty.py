@@ -50,3 +50,11 @@ print(tekst.removesuffix("Świecie"))  # "Witaj "
 
 # strip() - usunięcie bialych znaków, wiodących i kończących spacji
 print(tekst.removesuffix("Świecie").strip())  # "Witaj"
+
+encode_s = tekst.encode("utf-8")
+print(encode_s)  # b'Witaj \xc5\x9awiecie'
+# \xhh - Znak o wartości szesnastkowej (np. \x0A reprezentuje znak nowej linii)
+# \xc5\x9a -> Ś
+print(type(encode_s))  # <class 'bytes'> - dane bajtowe
+
+print(encode_s.decode('utf-8'))  # Witaj Świecie
