@@ -66,3 +66,12 @@ print(type(name))  # <class 'int'>
 print(50 * "90")
 # 9090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090
 print(50 * 90)  # 4500
+
+# podpowiedzi typów
+name: str = "Radek"
+print(name)
+print(type(name))  # <class 'str'>
+
+name = 90
+print(name)
+print(type(name))  # <class 'int'>
