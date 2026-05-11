@@ -56,5 +56,33 @@ print(encode_s)  # b'Witaj \xc5\x9awiecie'
 # \xhh - Znak o wartości szesnastkowej (np. \x0A reprezentuje znak nowej linii)
 # \xc5\x9a -> Ś
 print(type(encode_s))  # <class 'bytes'> - dane bajtowe
-
+# b - typ bajtowy
 print(encode_s.decode('utf-8'))  # Witaj Świecie
+
+imie = "Radek"
+print(len(imie))  # długośc 5
+
+# Mam na imię Radek.
+print("Mam na imię " + imie + ".")  # Mam na imię Radek.
+
+# f-string, wstrzyknięcie zawartości zmiennej do tekstu {}
+tekst_format = f"Mam na imię {imie} i lubie Pythona."
+print(tekst_format)  # Mam na imię Radek i lubie Pythona.
+
+tekst_format = f'\tMam na imię {imie}\n i lubię Pythona.\b'
+print(tekst_format)
+# "	 Mam na imię Radek
+#  i lubię Pythona"
+# \t - Tabulacja pozioma
+# \n - Nowa linia
+# \b - Powrót kursora (usuwa poprzedni znak) - backspace
+
+print(f"""  Mam na imię {imie}
+i lubię Pythona""")
+# "  Mam na imię Radek
+# i lubię Pythona"
+
+print('''Tekst
+    wielolinijkowy''')
+# "Tekst
+#     wielolinijkowy"
