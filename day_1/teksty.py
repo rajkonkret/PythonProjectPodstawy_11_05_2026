@@ -20,3 +20,25 @@ print(tekst_upper)  # WITAJ ŚWIECIE
 
 print(tekst.lower())  # witaj świecie
 print(tekst.capitalize())  # Witaj świecie
+
+print(tekst)
+# Witaj Świecie
+print(len(tekst))  # 13
+# Witaj Świecie
+# 0123456789.... numerowane od zera
+
+print(tekst[1])  # i
+print(tekst[3])  # a
+print(tekst[6])  # Ś
+
+print(tekst.index("Ś"))  # indeks 6
+# "e"
+print(tekst.index("e"))  # indeks 9
+print(tekst.count("e"))  # występuje 2 razy
+
+# "w"
+print(tekst.lower().count("w"))  # występuje 2 razy
+
+# Witaj Świecie
+# 0123456789.... numerowane od zera
+print(tekst.count('j', 0, 4))
