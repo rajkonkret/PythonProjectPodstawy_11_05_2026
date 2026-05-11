@@ -98,3 +98,14 @@ print("imie:", imie)  # imie: Radek
 # end
 # string appended after the last value, default a newline.
 print('Imie:', imie, sep="_ _")  # Imie:_ _Radek
+
+# komentarz
+
+# komentarz
+# wiele linijek
+
+# dokumentcja (docstring)
+"""Komentarz 
+    wielolinijkowy"""
+
+print(print.__doc__)
