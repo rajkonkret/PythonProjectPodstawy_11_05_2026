@@ -86,3 +86,8 @@ print('''Tekst
     wielolinijkowy''')
 # "Tekst
 #     wielolinijkowy"
+
+starszy = "witaj %s!"  # %s - string
+print(starszy % imie)  # witaj Radek!
+
+print("Witaj {}!".format("Radek"))  # Witaj Radek!
