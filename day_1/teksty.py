@@ -91,3 +91,10 @@ starszy = "witaj %s!"  # %s - string
 print(starszy % imie)  # witaj Radek!
 
 print("Witaj {}!".format("Radek"))  # Witaj Radek!
+
+print("imie:", imie)  # imie: Radek
+# sep
+# string inserted between values, default a space.
+# end
+# string appended after the last value, default a newline.
+print('Imie:', imie, sep="_ _")  # Imie:_ _Radek
