@@ -18,3 +18,5 @@ if __name__ == '__main__':
 # wheel - kółko myszy
 # theme - skórki
 # https://github.com/rajkonkret/PythonProjectPodstawy_11_05_2026/blob/master/main.py
+# https://peps.python.org/pep-0008/
+# snake_case
