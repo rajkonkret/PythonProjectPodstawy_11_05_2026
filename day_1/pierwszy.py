@@ -1,3 +1,5 @@
+import sys
+
 print("Hello World")
 print("Witaj Świecie")
 # ctrl alt l - formatowanie pep8
@@ -27,3 +29,17 @@ print('Radek')
 
 print('"Radek"')  # "Radek"
 print('Radek \"Radek\"')  # Radek "Radek"
+
+# type() - spradzenie typu danych
+print(type("Radek"))  # <class 'str'>, dane tekstowe
+
+print("39" + "89")  # 3989 - konkatenacja, łaczy teksty
+print("Radek" + "1")  # Radek1
+
+print(39 + 89)  # 128
+print(type(39)) # <class 'int'>, ineger, liczby całkowite
+
+print(sys.int_info)
+# sys.int_info(bits_per_digit=30, sizeof_digit=4,
+# default_max_str_digits=4300,
+# str_digits_check_threshold=640)
