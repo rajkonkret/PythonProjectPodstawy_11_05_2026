@@ -19,3 +19,20 @@ print(f'Witaj {user}, masz teraz {wiek} lat.')
 
 # %i - liczba całkowita (integer)
 # %f: formatowanie liczb zmiennoprzecinkowych
+
+print("Używamy wersji Pythona %i" % 3)  # Używamy wersji Pythona 3
+print("Używamy wersji Pythona %f" % 3)  # Używamy wersji Pythona 3.000000
+print("Używamy wersji Pythona %.2f" % 3.9)  # Używamy wersji Pythona 3.90
+print("Używamy wersji Pythona %.1f" % 3.9)  # Używamy wersji Pythona 3.9
+# zaokrągla przy wyświetlaniu
+print("Używamy wersji Pythona %.0f" % 3.9)  # Używamy wersji Pythona 4
+
+x = 3.8769
+print(x)
+y = round(x)
+print(y)  # 4
+print(type(y))  # <class 'int'>
+
+z = round(x, 2)
+print(f"{z=}")  # z=3.88
+print(type(z))  # <class 'float'>
