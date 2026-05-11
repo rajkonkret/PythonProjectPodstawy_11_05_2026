@@ -37,9 +37,17 @@ print("39" + "89")  # 3989 - konkatenacja, łaczy teksty
 print("Radek" + "1")  # Radek1
 
 print(39 + 89)  # 128
-print(type(39)) # <class 'int'>, ineger, liczby całkowite
+print(type(39))  # <class 'int'>, ineger, liczby całkowite
 
 print(sys.int_info)
 # sys.int_info(bits_per_digit=30, sizeof_digit=4,
 # default_max_str_digits=4300,
 # str_digits_check_threshold=640)
+
+# print("39" + 30)
+# TypeError: can only concatenate str (not "int") to str
+# silne typowanie - nie zamienai typów
+
+# rzutowanie  typów int(), str()
+print(int("39") + 30)  # 69
+print("39" + str(30))  # 3930
