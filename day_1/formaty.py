@@ -48,3 +48,15 @@ print(f'{user:<10}')  # "Tomek     "
 print(f'{user:>15}')  # "          Tomek"
 print(f'{user:^25}')  # "          Tomek          "
 print(f'{user:.^25}')  # "..........Tomek.........."
+
+print(liczba)
+print(f"Nasza dużo liczba: {liczba:,}")  # Nasza dużo liczba: 8,901,234,321,235,678,098
+print(f"Nasza dużo liczba: {liczba:_}")  # Nasza dużo liczba: 8_901_234_321_235_678_098
+print(f"Nasza dużo liczba: {liczba:_}".replace("_", "'"))  # Nasza dużo liczba: 8'901'234'321'235'678'098
+print(f"Nasza dużo liczba: {liczba:_}".replace("_", " "))  # Nasza dużo liczba: 8 901 234 321 235 678 098
+print(f"Nasza dużo liczba: {liczba:_}".replace("_", "."))  # Nasza dużo liczba: 8.901.234.321.235.678.098
+
+# liczba = 1500000000000000
+liczba = 1_500_000_000_000_000
+print(liczba)  # 1500000000000000
+print(type(liczba))  # <class 'int'>
