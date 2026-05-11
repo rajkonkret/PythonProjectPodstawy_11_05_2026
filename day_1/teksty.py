@@ -44,3 +44,9 @@ print(tekst.lower().count("w"))  # występuje 2 razy
 print(tekst.count('j', 0, 4))  # występuje 0 razy, z prawej strony zbiór otwarty, 0123
 print(tekst.count('a', 3, 4))  # występuje 1 raz
 print(tekst.count('w', 7, 9))  # występuje 1 raz
+
+print(tekst.removeprefix("Witaj"))  # " Świecie"
+print(tekst.removesuffix("Świecie"))  # "Witaj "
+
+# strip() - usunięcie bialych znaków, wiodących i kończących spacji
+print(tekst.removesuffix("Świecie").strip())  # "Witaj"
