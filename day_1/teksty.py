@@ -41,4 +41,6 @@ print(tekst.lower().count("w"))  # występuje 2 razy
 
 # Witaj Świecie
 # 0123456789.... numerowane od zera
-print(tekst.count('j', 0, 4))
+print(tekst.count('j', 0, 4))  # występuje 0 razy, z prawej strony zbiór otwarty, 0123
+print(tekst.count('a', 3, 4))  # występuje 1 raz
+print(tekst.count('w', 7, 9))  # występuje 1 raz
