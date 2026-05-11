@@ -16,3 +16,14 @@ print("Witaj Świecie")
 # Process finished with exit code 1 - mamy błąd
 print("Dalsza część")
 # Process finished with exit code 0 - program dziła poprawnie
+print("Radek")
+print('Radek')
+print('Radek')
+print('Radek')
+print('Radek')
+print('Radek')
+print('Radek')
+# ctrl d - powielanie linijek
+
+print('"Radek"')  # "Radek"
+print('Radek \"Radek\"')  # Radek "Radek"
