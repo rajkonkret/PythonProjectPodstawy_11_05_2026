@@ -51,3 +51,18 @@ print(sys.int_info)
 # rzutowanie  typów int(), str()
 print(int("39") + 30)  # 69
 print("39" + str(30))  # 3930
+
+# zmienna
+# pudełko, szufladka na dane
+
+name = "Radek"
+print(name)  # Radek
+print(type(name))  # <class 'str'>
+
+name = 90
+print(name)  # 90
+print(type(name))  # <class 'int'>
+
+print(50 * "90")
+# 9090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090
+print(50 * 90)  # 4500
