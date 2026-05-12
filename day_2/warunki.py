@@ -24,3 +24,35 @@ if odp:
     print("Brawo")
 
 print("Dalsza część programu")
+
+odp = "Radek"
+if odp:
+    print("Dane zostały wczytane")
+    # Dane zostały wczytane
+
+if odp == "Radek":  # == porównanie
+    print("Jestem Radek")
+# Jestem Radek
+
+odp = 0
+if odp:
+    print("Działa")
+else:  # w innym przypadku, wartość domyślna
+    print("Zero -> False")
+# Zero -> False
+
+a = "Radek"
+# jeżeli długośc tekstu jest większa niż 3 wypisac:
+# Długośc wynosi: wartość, więcej niz 3
+
+if len(a) > 3:
+    print(f"Długośc wynosi: {len(a)}, więcej niż 3")
+
+n = len(a)
+if n > 3:
+    print(f"Długośc wynosi: {n}, więcej niż 3")
+
+# walrus operator, operator morsa
+if (n := len(a)) > 3:
+    print(f"Długośc wynosi: {n}, więcej niż 3")
+# Długośc wynosi: 5, więcej niż 3
