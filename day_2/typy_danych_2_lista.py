@@ -180,4 +180,21 @@ print(lista_copy)
 lista_copy.sort()
 print(lista_copy)  # ['Dawid', 'Ola', 'Radek']
 
+lista_copy.sort(reverse=True)
+print(lista_copy)  # ['Radek', 'Ola', 'Dawid']
 
+lista_copy.append("Tomek")
+print(lista_copy)  # ['Radek', 'Ola', 'Dawid', 'Tomek']
+lista_copy.reverse()
+print(lista_copy)  # ['Tomek', 'Dawid', 'Ola', 'Radek'] - tylko odwrócenie
+
+# wypisacc liczby
+# nadpisac czwarty element liczbą inną
+# wyciagnąc elemnty od pierwszego do trzeciego włacznie
+# wypisac po indeksie dodatnim, ujemnym
+print(liczby)  # [12.34, 34, 54, 567, 999, 999, 'A']
+liczby[3] = 666
+print(liczby)  # [12.34, 34, 54, 666, 999, 999, 'A']
+print(liczby[0:3])  # [12.34, 34, 54]
+print(liczby[-3])  # 999
+print(liczby[3])  # 666
