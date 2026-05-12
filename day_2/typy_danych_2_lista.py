@@ -55,3 +55,11 @@ print(lista[15:20])  # [] - pusta kolekcja
 
 print(lista[:])
 # ['Radek', 'Tomek', 'Zenek', 'Anna', 'Dawid', 'Daniel']
+
+
+# ['Radek', 'Tomek', 'Zenek', 'Anna', 'Dawid', 'Daniel']
+#     0        1        2        3       4         5
+#     -6       -5       -4      -3       -2        -1
+
+print(lista[-2:0])  # [4:0] -> []
+print(lista[0:-2])  # ['Radek', 'Tomek', 'Zenek', 'Anna']
