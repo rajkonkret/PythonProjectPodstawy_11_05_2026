@@ -75,3 +75,32 @@ print(bool("0"))  # True
 
 print(None)  # odpowiednik null, stan nieokreślony, nie wiem
 print(bool(None))  # False
+
+# operacje logiczne
+
+print(40 * "-")
+
+# and - i
+print(False and True)  # False
+# True and True    True
+# True and False    False
+# False and True    False
+# False and False    False
+
+print(30 * "-")
+
+# or - lub
+print(False or True)  # True
+# True or True    True
+# True or False    True
+# False or True    True
+# False or False    False
+
+print(30 * "-")
+
+# not - negacja
+print(not True)
+print(not False)
+# ------------------------------
+# False
+# True
