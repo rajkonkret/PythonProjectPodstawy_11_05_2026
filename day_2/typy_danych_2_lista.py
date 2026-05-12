@@ -128,3 +128,11 @@ print(zmienna)  # Asia
 print(lista)  # ['Radek', 'Ola', 'Dawid', 'Daniel']
 
 print(lista.pop())  # Daniel, usunie ostatni element
+
+a = 1
+b = 3
+a = b
+print(f"{a=}, {b=}")  # a=3, b=3
+
+b = 9
+print(f"{a=}, {b=}")  # a=3, b=9
