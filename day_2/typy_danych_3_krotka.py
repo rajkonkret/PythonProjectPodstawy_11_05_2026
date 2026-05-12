@@ -36,3 +36,15 @@ print(tupla_imiona.index("Radek"))  # index numer 2
 print(tupla_imiona.count("Radek"))  # występuje 1 raz
 
 print(len(tupla_imiona))  # długośc 4
+
+tup = 1, 2
+print(type(tup))
+
+# a - pierwsza wartosc, b - druga wartość
+a = tup[0]
+b = tup[1]
+print(a, b)  # 1 2
+
+# rozpakowanie tupli
+a, b = tup
+print(a, b)
