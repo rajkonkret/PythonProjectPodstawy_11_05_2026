@@ -48,3 +48,13 @@ print(a, b)  # 1 2
 # rozpakowanie tupli
 a, b = tup
 print(a, b)
+
+# zamina miejscami eartości zmiennych
+a, b = b, a
+print(a, b)  # 2 1
+
+print(tupla_imiona)  # ('Zenek', 'Marek', 'Radek', 'Ania')
+# name1, name2, name3
+# name1, name2, name3 = tupla_imiona # ValueError: too many values to unpack (expected 3, got 4)
+name1, name2, *name3 = tupla_imiona # * dowolna ilośc elementów
+print(name1, name2, name3) # Zenek Marek ['Radek', 'Ania']
