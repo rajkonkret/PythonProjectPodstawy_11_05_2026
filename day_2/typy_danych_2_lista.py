@@ -160,3 +160,16 @@ print(lista2)  # ['Radek', 'Ola', 'Dawid']
 liczby = [54, 999, 12.34, 34, 567, 999]
 print(type(liczby))  # <class 'list'>
 print(liczby)  # [54, 999, 12.34, 34, 567, 999]
+
+liczby.sort()
+print(liczby)  # zmienia oryginał: [12.34, 34, 54, 567, 999, 999]
+
+liczby.append("A")
+print(liczby)  # [12.34, 34, 54, 567, 999, 999, 'A']
+print(type(liczby))  # <class 'list'>
+
+# liczby.sort()
+# TypeError: '<' not supported between instances of 'str' and 'int'
+
+print(ord("A"))  # 65
+# print(ord("AB")) # TypeError: ord() expected a character, but string of length 2 found
