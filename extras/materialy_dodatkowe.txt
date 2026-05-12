@@ -118,3 +118,5 @@ spam /= 1    spam = spam / 1
 spam %= 1    spam = spam % 1
 
 https://naukapythona.com.pl/
+https://www.hackerrank.com/
+https://www.w3schools.com/python/python_numbers.asp
