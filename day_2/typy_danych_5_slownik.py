@@ -50,4 +50,5 @@ print(dictionary_radek)  # {'imie': ['Radek', 'Tomek', 'Magda'], 'wiek': 50}
 # print(dictionary_radek['Imie'])  # KeyError: 'Imie'
 print(dictionary_radek['Imie'.lower()])  # ['Radek', 'Tomek', 'Magda']
 
-print(dictionary_radek.get("Imie"))
+print(dictionary_radek.get("Imie"))  # None
+print(dictionary_radek.get("Imie", "default"))  # default
