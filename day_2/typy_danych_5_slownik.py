@@ -52,3 +52,17 @@ print(dictionary_radek['Imie'.lower()])  # ['Radek', 'Tomek', 'Magda']
 
 print(dictionary_radek.get("Imie"))  # None
 print(dictionary_radek.get("Imie", "default"))  # default
+
+print(chr(223))  # ß
+# \uXXXX - Znak Unicode o wartości czteroznakowego kodu szesnastkowego
+print("\u00DF")  # ß
+# \N{name} - Znak Unicode o podanej nazwie
+print('\N{LATIN SMALL LETTER SHARP S}')  # ß
+
+name1 = "GROSS"  # -> gross
+name2 = "groß"
+
+print(name1.lower())
+print(name1.lower() == name2.lower())  # False
+"""Return a version of the string suitable for caseless comparisons."""
+print(name1.casefold() == name2.casefold()) # True
