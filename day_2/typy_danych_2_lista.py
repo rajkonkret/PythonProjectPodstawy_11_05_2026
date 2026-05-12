@@ -173,3 +173,11 @@ print(type(liczby))  # <class 'list'>
 
 print(ord("A"))  # 65
 # print(ord("AB")) # TypeError: ord() expected a character, but string of length 2 found
+
+print(chr(65))  # A - wypisze znak o zadanym kodzie
+
+print(lista_copy)
+lista_copy.sort()
+print(lista_copy)  # ['Dawid', 'Ola', 'Radek']
+
+
