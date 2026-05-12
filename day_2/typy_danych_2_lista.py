@@ -52,3 +52,6 @@ print(lista[2:5])  # ['Zenek', 'Anna', 'Dawid'] , bez ostatniego
 print(lista[2:10])  # ['Zenek', 'Anna', 'Dawid', 'Daniel']
 
 print(lista[15:20])  # [] - pusta kolekcja
+
+print(lista[:])
+# ['Radek', 'Tomek', 'Zenek', 'Anna', 'Dawid', 'Daniel']
