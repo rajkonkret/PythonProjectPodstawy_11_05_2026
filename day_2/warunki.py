@@ -91,3 +91,55 @@ print(f'Rabat wynosi: {rabat}')
 # operator warunkowy
 rabat = 25 if sum_zam > 100 else 0
 print(f'Rabat wynosi: {rabat}')  # Rabat wynosi: 25
+
+# napisac test z...
+# trzy pytania
+# punktacja
+
+#
+# spam += 1    spam = spam + 1
+# spam -= 1    spam = spam - 1
+# spam *= 1    spam = spam * 1
+# spam /= 1    spam = spam / 1
+# spam %= 1    spam = spam % 1
+
+punkty = 0
+odp = input("Podaj rok Chrztu Polski: ")  # str
+if odp.strip().casefold() == "966":
+    print("Odpowiedź prawidłowa")
+    # punkty = punkty + 1
+    punkty += 1
+else:
+    print("Masz w książce na stronie 26")
+print(punkty)
+
+odp = input("Jak Król jest na banknocie 200 zł: ")  # str
+if odp.strip().casefold() == "Zygmunt".casefold():
+    print("Odpowiedź prawidłowa")
+    punkty += 1
+else:
+    print("Masz w książce na stronie 60")
+print(punkty)
+
+odp = input("Czy koty trzeba głaskać: ")  # str
+if odp.strip().casefold() == "tak".casefold():
+    print("Odpowiedź prawidłowa")
+    punkty += 1
+else:
+    print("Masz w książce na stronie 90")
+print(punkty)
+
+print(f"Końcowy wynik: {punkty} pkt.")
+
+# Podaj rok Chrztu Polski: 966
+# Odpowiedź prawidłowa
+# 1
+# Jak Król jest na banknocie 200 zł: Zygmunt
+# Odpowiedź prawidłowa
+# 2
+# Czy koty trzeba głaskać: tak
+# Odpowiedź prawidłowa
+# 3
+# Końcowy wynik: 3 pkt.
+#
+# Process finished with exit code 0
