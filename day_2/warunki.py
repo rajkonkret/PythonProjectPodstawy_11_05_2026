@@ -103,33 +103,33 @@ print(f'Rabat wynosi: {rabat}')  # Rabat wynosi: 25
 # spam /= 1    spam = spam / 1
 # spam %= 1    spam = spam % 1
 
-punkty = 0
-odp = input("Podaj rok Chrztu Polski: ")  # str
-if odp.strip().casefold() == "966":
-    print("Odpowiedź prawidłowa")
-    # punkty = punkty + 1
-    punkty += 1
-else:
-    print("Masz w książce na stronie 26")
-print(punkty)
-
-odp = input("Jak Król jest na banknocie 200 zł: ")  # str
-if odp.strip().casefold() == "Zygmunt".casefold():
-    print("Odpowiedź prawidłowa")
-    punkty += 1
-else:
-    print("Masz w książce na stronie 60")
-print(punkty)
-
-odp = input("Czy koty trzeba głaskać: ")  # str
-if odp.strip().casefold() == "tak".casefold():
-    print("Odpowiedź prawidłowa")
-    punkty += 1
-else:
-    print("Masz w książce na stronie 90")
-print(punkty)
-
-print(f"Końcowy wynik: {punkty} pkt.")
+# punkty = 0
+# odp = input("Podaj rok Chrztu Polski: ")  # str
+# if odp.strip().casefold() == "966":
+#     print("Odpowiedź prawidłowa")
+#     # punkty = punkty + 1
+#     punkty += 1
+# else:
+#     print("Masz w książce na stronie 26")
+# print(punkty)
+#
+# odp = input("Jak Król jest na banknocie 200 zł: ")  # str
+# if odp.strip().casefold() == "Zygmunt".casefold():
+#     print("Odpowiedź prawidłowa")
+#     punkty += 1
+# else:
+#     print("Masz w książce na stronie 60")
+# print(punkty)
+#
+# odp = input("Czy koty trzeba głaskać: ")  # str
+# if odp.strip().casefold() == "tak".casefold():
+#     print("Odpowiedź prawidłowa")
+#     punkty += 1
+# else:
+#     print("Masz w książce na stronie 90")
+# print(punkty)
+#
+# print(f"Końcowy wynik: {punkty} pkt.")
 
 # Podaj rok Chrztu Polski: 966
 # Odpowiedź prawidłowa
@@ -143,3 +143,32 @@ print(f"Końcowy wynik: {punkty} pkt.")
 # Końcowy wynik: 3 pkt.
 #
 # Process finished with exit code 0
+
+# zasymulujemy system zbierania logów
+# zmienna: typ systemu -> console, email inny
+# console: "Stało się coś strasznego"
+# email: "System email"
+# do listy błedów dodac tłumaczenie błedu
+# poziomy błedów: error, medium, inny
+
+lista_b = []
+alert_system = "email"
+error_level = "error"
+
+if alert_system == "console":
+    print("Stało się coś strasznego")
+elif alert_system == "email":
+    print("System email")
+    if error_level == "error":
+        lista_b.append("Krytyczny")
+    elif error_level == "medium":
+        lista_b.append("Ostrzeżenie")
+    else:
+        lista_b.append("inny")
+
+else:
+    print("Inny system")
+
+print(lista_b)
+# System email
+# ['Krytyczny']
