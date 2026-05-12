@@ -75,3 +75,19 @@ dict_small = {'x': 20}
 dict_small.update([("y", 3), ("z", 67)])
 print(dict_small)
 # {'x': 20, 'y': 3, 'z': 67}
+
+# input() - możliwość wprowadzania danych do komputera np.: z kalwiatury
+
+# tekst = input("Podaj imię:")
+# print(tekst)
+# Podaj imię:Raddek
+# Raddek
+
+# input() zwraca str
+# napisac apliakcję kalkulator
+a = int(input("Podaj pierwszą liczbę:"))
+b = input("Podaj drugą liczbę:")
+print(int(a) + float(b))
+# Podaj pierwszą liczbę:5
+# Podaj drugą liczbę:6
+# 11.0
