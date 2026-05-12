@@ -136,3 +136,23 @@ print(f"{a=}, {b=}")  # a=3, b=3
 
 b = 9
 print(f"{a=}, {b=}")  # a=3, b=9
+
+lista2 = lista  # kopia referencji, adresu
+print(lista)  # ['Radek', 'Ola', 'Dawid']
+print(lista2)  # ['Radek', 'Ola', 'Dawid']
+
+lista_copy = lista.copy()
+
+lista.clear()  # usuniecie wszystkich elementów z listy
+print(lista)  # []
+print(lista2)  # []
+print(lista_copy)  # ['Radek', 'Ola', 'Dawid']
+
+# id() - pokazuje referencje
+print(id(lista))  # 1994572615616
+print(id(lista2))  # 1994572615616
+print(id(lista_copy))  # 1994575496064
+
+lista2 = lista_copy
+print(lista)  # []
+print(lista2)  # ['Radek', 'Ola', 'Dawid']
