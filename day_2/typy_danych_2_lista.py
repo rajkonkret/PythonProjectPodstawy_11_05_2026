@@ -86,3 +86,20 @@ print(tablica)  # [[1, 2], [3, 4]]
 # numpy - biblioteka do pracy z tablicami/macierzami
 
 # ['Radek', 'Tomek', 'Zenek', 'Anna', 'Dawid', 'Daniel']
+
+# nadpisanie alementu na wskazanym miejscu (indeksie)
+lista[2] = 'Asia'
+print(lista)
+# ['Radek', 'Tomek', 'Asia', 'Anna', 'Dawid', 'Daniel']
+
+# dopisanie elementu we wskazanym miejscu (indeksie)
+lista.insert(1, 'Ola')
+print(lista)
+# ['Radek', 'Ola', 'Tomek', 'Asia', 'Anna', 'Dawid', 'Daniel']
+
+lista_darek = []
+lista_darek.insert(1, "Darek")
+print(lista_darek)  # ['Darek']
+
+# sprawdzenie indeksu
+print(lista_darek.index("Darek"))  # index 0
