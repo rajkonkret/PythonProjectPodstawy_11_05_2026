@@ -172,3 +172,9 @@ else:
 print(lista_b)
 # System email
 # ['Krytyczny']
+
+# zad 8
+name = "Jan kowalski"
+
+# zad 9
+print(name.split())  # ['Jan', 'kowalski']
