@@ -79,3 +79,10 @@ print(lista_15[::-1])
 
 print(list(range(0, 15, 2)))  # (start, stop, krok)
 # [0, 2, 4, 6, 8, 10, 12, 14]
+
+# python nie ma typu array (tablic)
+tablica = [[1, 2], [3, 4]]
+print(tablica)  # [[1, 2], [3, 4]]
+# numpy - biblioteka do pracy z tablicami/macierzami
+
+# ['Radek', 'Tomek', 'Zenek', 'Anna', 'Dawid', 'Daniel']
