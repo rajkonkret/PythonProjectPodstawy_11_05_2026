@@ -126,3 +126,5 @@ print(lista)
 zmienna = lista.pop(-1)
 print(zmienna)  # Asia
 print(lista)  # ['Radek', 'Ola', 'Dawid', 'Daniel']
+
+print(lista.pop())  # Daniel, usunie ostatni element
