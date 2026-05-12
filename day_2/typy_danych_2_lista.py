@@ -156,3 +156,7 @@ print(id(lista_copy))  # 1994575496064
 lista2 = lista_copy
 print(lista)  # []
 print(lista2)  # ['Radek', 'Ola', 'Dawid']
+
+liczby = [54, 999, 12.34, 34, 567, 999]
+print(type(liczby))  # <class 'list'>
+print(liczby)  # [54, 999, 12.34, 34, 567, 999]
