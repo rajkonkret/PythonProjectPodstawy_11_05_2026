@@ -82,12 +82,12 @@ print(dict_small)
 # print(tekst)
 # Podaj imię:Raddek
 # Raddek
-
-# input() zwraca str
-# napisac apliakcję kalkulator
-a = int(input("Podaj pierwszą liczbę:"))
-b = input("Podaj drugą liczbę:")
-print(int(a) + float(b))
-# Podaj pierwszą liczbę:5
-# Podaj drugą liczbę:6
-# 11.0
+#
+# # input() zwraca str
+# # napisac apliakcję kalkulator
+# a = int(input("Podaj pierwszą liczbę:"))
+# b = input("Podaj drugą liczbę:")
+# print(int(a) + float(b))
+# # Podaj pierwszą liczbę:5
+# # Podaj drugą liczbę:6
+# # 11.0
