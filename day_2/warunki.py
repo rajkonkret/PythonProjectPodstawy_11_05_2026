@@ -56,3 +56,24 @@ if n > 3:
 if (n := len(a)) > 3:
     print(f"Długośc wynosi: {n}, więcej niż 3")
 # Długośc wynosi: 5, więcej niż 3
+
+# pobrac zarobki
+# jesli zarobki mniejsze do 10000 podatek 0
+# dla pozostałych podatek 90% (0.9)
+# wypisac obliczony podatek
+zarobki = int(input("Podaj zarobki:"))
+
+# kolejność ma znaczenie
+podatek = 0
+if zarobki < 10_000:
+    podatek = 0
+elif zarobki < 40_000:
+    podatek = 0.2
+elif zarobki < 100_000:
+    podatek = 0.6
+else:
+    podatek = 0.9
+
+print(f"Podatek wynosi: {zarobki * podatek} pln.")
+# Podaj zarobki:100000
+# Podatek wynosi: 90000.0 pln.
