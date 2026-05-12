@@ -198,3 +198,20 @@ print(liczby)  # [12.34, 34, 54, 666, 999, 999, 'A']
 print(liczby[0:3])  # [12.34, 34, 54]
 print(liczby[-3])  # 999
 print(liczby[3])  # 666
+
+tekst = "Pyth on ."
+lista = [tekst]
+print(lista)  # ['Pyth on .']
+print(type(lista))  # <class 'list'>
+
+# rozpakowanie sekwencji
+lista_tekst = list(tekst)
+print(lista_tekst)  # ['P', 'y', 't', 'h', ' ', 'o', 'n', ' ', '.']
+print(type(lista_tekst))  # <class 'list'>
+
+print(lista + lista_tekst)
+# ['Pyth on .', 'P', 'y', 't', 'h', ' ', 'o', 'n', ' ', '.']
+
+krotka = tuple(lista_copy)
+print(type(krotka))  # <class 'tuple'>
+print(krotka)  # ('Tomek', 'Dawid', 'Ola', 'Radek')
