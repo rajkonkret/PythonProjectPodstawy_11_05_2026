@@ -25,3 +25,8 @@ with open("test.log", "a") as f:
     f.write("Dodane\n")
     f.write("Dodane\n")
     f.write("Dodane\n")
+
+with open('test.log', "r") as f:
+    lines = f.read()
+
+print(lines)
