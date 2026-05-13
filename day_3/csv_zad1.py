@@ -22,3 +22,10 @@ print(dict_name)
 print(type(dict_name))
 # {'name': 'radek', 'branch': 'coe', 'year': '3', 'cgpa': 0}
 # <class 'dict'>
+
+filename = "records.dict.csv"
+
+with open(filename, "w", newline="") as f:
+    csvwriter = csv.DictWriter(f, fieldnames=fields)
+    csvwriter.writeheader()  # zapis nagłówka, nazwy kolumn
+    csvwriter.writerow(dict_name)
