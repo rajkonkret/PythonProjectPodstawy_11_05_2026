@@ -30,3 +30,23 @@ with open('nasze_dane_b.json', "w") as f:
 #     "age": 40,
 #     "czy_pali": null
 # }
+
+# sortowanie po kluczu
+with open('nasze_dane_sorted.json', 'w') as f:
+    json.dump(person_dict, f, indent=4, sort_keys=True)
+# {
+#     "age": 40,
+#     "czy_pali": null,
+#     "name": "Radek"
+# }
+
+with open('nasze_dane.json', "r") as file:
+    data = json.load(file)
+
+print(data)  # {'name': 'Radek', 'age': 40, 'czy_pali': None}
+print(type(data))  # <class 'dict'>
+
+print("Imię pacjenta:", data['name'])
+print("Wiek pacjenta:", data['age'])
+# Imię pacjenta: Radek
+# Wiek pacjenta: 40
