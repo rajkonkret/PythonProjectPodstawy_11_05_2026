@@ -75,3 +75,7 @@ for i in range(-10, 0):
 
 for i in range(10, 0, -2):  # (start, stop, krok)
     print(i)
+
+imiona = ['Radek', 'Tomek', "Agata", "Marek"]
+
+#  wypisac elementy z tej listy jeden pod drugim
