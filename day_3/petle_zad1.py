@@ -38,3 +38,19 @@ for i in range(10):
         lista3.append(i)
 
 print(lista3)  # [0, 2, 4, 6, 8]
+
+# list comprehensions
+lista3 = [j for j in range(10) if j % 2 == 0]
+print(lista3)  # [0, 2, 4, 6, 8]
+
+for i in range(len(lista3)):  # pod i mamy index
+    pass
+    print(lista3[i])
+
+for c in lista3:  # podstawia kolejne elemnty z listy
+    print(c)
+# 0
+# 2
+# 4
+# 6
+# 8
