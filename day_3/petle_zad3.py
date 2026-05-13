@@ -33,7 +33,23 @@ while licznik < 10:
 # podaj hasło:fsddfgtrhtr
 # podaj hasło:secret
 
-while (password := input("Podaj hasło:")) != "secret":
-    pass
+# while (password := input("Podaj hasło:")) != "secret":
+#     pass
 # Podaj hasło:asad
 # Podaj hasło:secret
+
+# usunąć wszystkie 5 z listy
+my_list = [1, 5, 2, 3, 5, 4, 5, 6, 5]
+
+number_to_remove = 5
+while number_to_remove in my_list:
+    my_list.remove(number_to_remove)
+
+print(my_list)  # [1, 2, 3, 4, 6]
+
+# usunać duplikaty bez utraty kolejności
+my_list = [1, 5, 2, 3, 5, 4, 5, 6, 5]
+print(dict.fromkeys(my_list))
+# {1: None, 5: None, 2: None, 3: None, 4: None, 6: None}
+
+print(list(dict.fromkeys(my_list)))  # [1, 5, 2, 3, 4, 6]
