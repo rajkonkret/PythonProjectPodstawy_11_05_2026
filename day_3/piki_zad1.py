@@ -24,7 +24,7 @@ with open("test.log", "w", encoding="utf-8") as file:  # pod file dostaniemy fil
 with open("test.log", "a", encoding="utf-8") as f:
     f.write("Dodane\n")
     f.write("Dodane\n")
-    f.write("Dośdane\n")
+    f.write("Dośąźćdane\n")
 
 with open('test.log', "r", encoding="utf-8") as f:
     lines = f.read()
