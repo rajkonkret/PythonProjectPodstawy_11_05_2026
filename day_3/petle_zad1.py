@@ -124,3 +124,12 @@ for i, o in enumerate(imiona, start=1):
 # 3 Agata
 # 4 Marek
 
+imiona = ['Radek', 'Tomek', "Agata", "Marek"]
+wiek = [44, 56, 23, 38]
+
+# Radek 44
+for i in range(len(imiona)):
+    print(i, imiona[i])
+
+for i in imiona:
+    print(imiona.index(i), i)
