@@ -41,3 +41,20 @@ while True:
         print("Bład:", e)
     finally:
         print("Obliczenia zostały wykonane")
+
+print(50 * "-")
+wyr = input("Podaj wyrażenie do obliczenia:")  # 50 * 3 / 4
+print(eval(wyr))
+# --------------------------------------------------
+# Podaj wyrażenie do obliczenia:>? 5 * 8
+# 40
+
+a = float(input("Podaj pierwszą liczbę:"))
+b = float(input("Podaj drugą liczbę:"))
+znak = input("Wprowadź znak: (+,-,*,/)")
+wyr = f"{a} {znak} {b}"
+print(eval(wyr))
+# Podaj pierwszą liczbę:>? 1
+# Podaj drugą liczbę:>? 2
+# Wprowadź znak: (=,-,*,/)>? +
+# 3.0
