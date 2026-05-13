@@ -21,3 +21,20 @@ print("Wyjście z pętli")
 # 8
 # 6
 # Wyjście z pętli
+
+for i in range(10):
+    if i % 2 == 0:  # modulo, reszta z dzielenia
+        print(i, "parzysta")
+# 0 parzysta
+# 2 parzysta
+# 4 parzysta
+# 6 parzysta
+# 8 parzysta
+
+# parzyste do listy
+lista3 = []
+for i in range(10):
+    if i % 2 == 0:
+        lista3.append(i)
+
+print(lista3)  # [0, 2, 4, 6, 8]
