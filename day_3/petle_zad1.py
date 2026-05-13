@@ -54,3 +54,18 @@ for c in lista3:  # podstawia kolejne elemnty z listy
 # 4
 # 6
 # 8
+
+lista_nazwy = ['Ala', 'Tomek', 'Zenek', 'Basia']
+for p in lista_nazwy:
+    print(p)
+
+for c in lista3:
+    if c > 4:
+        print(c, "Większa niż 4")
+    elif c == 4:
+        print(c, "Równe 4")
+    else:
+        print(c, "Mniejsze niż 4")
+    print(c)  # za każdym przejściem pętli
+
+print("Po zakończy pętli")
