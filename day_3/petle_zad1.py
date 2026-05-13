@@ -79,3 +79,48 @@ for i in range(10, 0, -2):  # (start, stop, krok)
 imiona = ['Radek', 'Tomek', "Agata", "Marek"]
 
 #  wypisac elementy z tej listy jeden pod drugim
+
+for o in imiona:
+    print(o)
+# Radek
+# Tomek
+# Agata
+# Marek
+
+# 0 Radek
+
+for i in range(len(imiona)):
+    print(i, imiona[i])
+
+for i in imiona:
+    print(imiona.index(i), i)
+# 0 Radek
+# 1 Tomek
+# 2 Agata
+# 3 Marek
+
+# enumerate() - zwraca numer i element kolekcji
+for p in enumerate(imiona):
+    print(p)
+# (0, 'Radek')
+# (1, 'Tomek')
+# (2, 'Agata')
+# (3, 'Marek') -> krotka -> 3 Marek
+
+a, b = (3, 'Marek')
+print(a, b)  # 3 Marek
+
+for i, o in enumerate(imiona):
+    print(i, o)
+# 0 Radek
+# 1 Tomek
+# 2 Agata
+# 3 Marek
+
+for i, o in enumerate(imiona, start=1):
+    print(i, o)
+# 1 Radek
+# 2 Tomek
+# 3 Agata
+# 4 Marek
+
