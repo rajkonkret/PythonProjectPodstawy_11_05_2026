@@ -41,3 +41,14 @@ for k, v in dictionary.items():
     print(k, v, sep="<=>")
 # imie<=>Radek
 # nazwisko<=>Kowalski
+
+for k, v in dictionary.items():
+    print(k, v, sep="<=>", end=" | ")
+# imie<=>Radek | nazwisko<=>Kowalski |
+
+print("Radek")
+# imie<=>Radek | nazwisko<=>Kowalski | Radek
+
+print("Następna linia")
+# imie<=>Radek | nazwisko<=>Kowalski | Radek
+# Następna linia
