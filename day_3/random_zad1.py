@@ -16,3 +16,17 @@ lista = [67, 45, 32, 68, 90, 42, 49]
 print(lista[random.randrange(len(lista))])  # 68
 
 print(random.choice(lista))  # element z listy, 90, losuje jeden element
+
+lista_kul = list(range(1, 50))  # od 1 do 49
+for _ in range(6):
+    kula = random.choice(lista_kul)
+    lista_kul.remove(kula)
+    print(kula)
+
+print(random.choices(lista_kul, k=6))  # [15, 10, 27, 27, 24, 32], z powtórzeniami
+
+print(random.sample(lista_kul, k=6))  # [17, 13, 22, 44, 15, 5], bez powtórzeń
+print(random.sample(lista_kul, 6))  # [17, 13, 22, 44, 15, 5], bez powtórzeń
+# [23, 1, 28, 41, 29, 46]
+# [18, 13, 28, 39, 27, 49]
+# [12, 25, 8, 44, 45, 13]
