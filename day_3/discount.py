@@ -26,3 +26,8 @@ print(type(formated_date))  # <class 'str'>
 formated_time = datetime.now().strftime("%I:%M:%S %p")
 print(formated_time)  # 13:53:43, 01:54:41 PM
 print(type(formated_time))  # <class 'str'>
+
+object_data = datetime.now().strptime("13/05/2026", "%d/%m/%Y")
+print(object_data)  # 2026-05-13 00:00:00
+print(type(object_data))  # <class 'datetime.datetime'>
+
