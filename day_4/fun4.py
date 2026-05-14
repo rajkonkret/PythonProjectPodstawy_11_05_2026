@@ -23,3 +23,6 @@ xfun()
 xfun()
 xfun()
 xfun()
+
+yfun = fun1()
+print(yfun())
