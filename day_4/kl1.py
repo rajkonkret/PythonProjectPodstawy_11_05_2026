@@ -27,6 +27,12 @@ class Human:
     # w zależności od płci k-m
     # ruszyłam w drogę
     # ruszyłem w drogę
+    def ruszaj(self):
+
+        if self.plec == "m":
+            print("Ruszył em w drogę")
+        else:
+            print("Ruszył am w drogę")
 
 
 # print(print.__doc__)
@@ -71,3 +77,13 @@ cz2.powitanie()  # Nazywam się: Anna
 
 cz1.ruszaj()
 cz2.ruszaj()
+# Nazywam się: Anna
+# Ruszył em w drogę
+# Ruszył am w drogę
+
+lista = [cz1, cz2]
+
+for i in lista:
+    i.ruszaj()
+# Ruszył em w drogę
+# Ruszył am w drogę
