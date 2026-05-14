@@ -16,6 +16,8 @@ class Human:
         self.wzrost = wzrost
         self.plec = plec
 
+    # storzyc metody wypisz_wiek(), wypisz_wzrost()
+
     def powitanie(self):
         print(f'Nazywam się: {self.imie}')
         # print(f'Nazywam się: {cz1.imie}')
