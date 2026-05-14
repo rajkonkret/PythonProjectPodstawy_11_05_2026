@@ -23,6 +23,11 @@ class Human:
         # print(f'Nazywam się: {cz1.imie}')
         # self - przechowuje obiekt
 
+    # napisac metode ruszaj()
+    # w zależności od płci k-m
+    # ruszyłam w drogę
+    # ruszyłem w drogę
+
 
 # print(print.__doc__)
 # print(Human.__doc__)  # Klasa Human opsiująca człowieka e Pythonie
@@ -63,3 +68,6 @@ print(cz2.wiek)
 # 45
 
 cz2.powitanie()  # Nazywam się: Anna
+
+cz1.ruszaj()
+cz2.ruszaj()
