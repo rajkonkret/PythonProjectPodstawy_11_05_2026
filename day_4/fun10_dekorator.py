@@ -22,3 +22,25 @@ hej()
 # Hej!!
 
 # zamimana koloru tekstu w konsoli
+
+# print("\033[31mHello\033[0m")
+
+from colorama import init, Fore, Style
+
+init(autoreset=True)
+
+
+def color_decorator(fun):
+    def wrapper():
+        result = fun()
+        return Fore.RED + result + Style.RESET_ALL
+
+    return wrapper
+
+
+@color_decorator
+def napis():
+    return "Hello WOrld!!!"
+
+
+print(napis())
