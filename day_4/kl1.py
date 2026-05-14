@@ -51,3 +51,15 @@ print(cz1.wiek)  # 90
 cz1.powitanie()  # Nazywam się: Radek
 
 # drugi obiekt tej klasy, odmiennej płci
+
+cz2 = Human()
+cz2.imie = 'Anna'
+cz2.wiek = 45
+print(cz2.plec)
+print(cz2.imie)
+print(cz2.wiek)
+# k
+# Anna
+# 45
+
+cz2.powitanie()  # Nazywam się: Anna
