@@ -18,6 +18,11 @@ class Human:
     wiek = None
     plec = "k"
 
+    def powitanie(self):
+        print(f'Nazywam się: {self.imie}')
+        # print(f'Nazywam się: {cz1.imie}')
+        # self - przechowuje obiekt
+
 
 # print(print.__doc__)
 # print(Human.__doc__)  # Klasa Human opsiująca człowieka e Pythonie
@@ -42,3 +47,7 @@ cz1.plec = "m"
 print(cz1.plec)  # m
 print(cz1.imie)  # Radek
 print(cz1.wiek)  # 90
+
+cz1.powitanie()  # Nazywam się: Radek
+
+# drugi obiekt tej klasy, odmiennej płci
