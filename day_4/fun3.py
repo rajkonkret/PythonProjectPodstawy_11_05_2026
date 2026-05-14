@@ -20,7 +20,7 @@ def dodaj3():
 
 
 def dodaj5():
-    a = 10
+    a = 10  # lokalne a
     b = 9
     c = a + b
     print(c)  # c - zmienna lokalna
@@ -36,4 +36,5 @@ print("Wartość a z góry (globalne)", a)  # Wartość a z góry (globalne) 7
 dodaj2()  # 7 + 10
 print("Wartość a z góry (globalne)", a)  # Wartość a z góry (globalne) 7
 dodaj5()  # 19
+print("Wartość a z góry (globalne)", a)  # Wartość a z góry (globalne) 7
 # print(c)  # NameError: name 'c' is not defined
