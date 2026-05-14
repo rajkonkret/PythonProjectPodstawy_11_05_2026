@@ -3,7 +3,7 @@
 # lista = "Radek"
 # statistics - funkcje statystyczne np.: śrenia (mean)
 
-def srednia(*cyfry):  # dowolna ilośc danych przekazynych pozycyjnie
+def srednia(name=None, *cyfry):  # dowolna ilośc danych przekazynych pozycyjnie
     print(cyfry)  # (1, 2, 3, 4, 5, 6)
 
     count = len(cyfry)
@@ -18,8 +18,8 @@ def srednia(*cyfry):  # dowolna ilośc danych przekazynych pozycyjnie
     except Exception as e:
         print("Bład:", e)
     else:
-        print(f"średnia wynosi: {avg}")
-        print(f"średnia wynosi: {avg_p}")
+        print(f"średnia dla ucznia: {name}, wynosi: {avg}")
+        print(f"średnia dla ucznia: {name}, wynosi: {avg_p}")
     finally:
         print("Nastęny uczeń")
 
@@ -31,4 +31,18 @@ srednia(1, 2, 3, 4, 5, 6)
 # Nastęny uczeń
 # (1, 2, 3, 4, 5, 6)
 # średnia wynosi: 3.5
+# Nastęny uczeń
+
+srednia("Radek", 5, 6, 7, 8, 5, 6)
+# ("Radek", 5, 6, 7, 8, 5, 6)
+name, *oceny = ("Radek", 5, 6, 7, 8, 5, 6)
+# Bład: division by zero
+# Nastęny uczeń
+# (2, 3, 4, 5, 6)
+# średnia dla ucznia: 1, wynosi: 4.0
+# średnia dla ucznia: 1, wynosi: 5.0
+# Nastęny uczeń
+# (5, 6, 7, 8, 5, 6)
+# średnia dla ucznia: Radek, wynosi: 6.166666666666667
+# średnia dla ucznia: Radek, wynosi: 6.0
 # Nastęny uczeń
