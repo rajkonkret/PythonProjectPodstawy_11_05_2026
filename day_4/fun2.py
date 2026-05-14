@@ -24,3 +24,21 @@ print(odejmij(1, 2, c=3))
 print(odejmij(1, b=2, c=3))
 print(odejmij())
 print(odejmij(a, b))
+
+
+def oblicz_vat(kwota, vat=23):
+    return kwota * (100 + vat) / 100
+
+
+print(oblicz_vat(1000))
+print(oblicz_vat(1000, 8))
+print(oblicz_vat(vat=15, kwota=10000))
+# 1230.0
+# 1080.0
+# 11500.0
+
+zm = oblicz_vat(1000)
+if zm == 1230:
+    print("Ok")  # Ok
+
+print(dodaj() + odejmij(1, 4, 6))  # 98
