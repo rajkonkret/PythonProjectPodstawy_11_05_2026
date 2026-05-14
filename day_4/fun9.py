@@ -58,3 +58,11 @@ print(l3)
 
 print(f"Zastosowanie map(): {list(map(zmien, lista))}")
 # Zastosowanie map(): [2, 4, 28, 48, 100, 134, 160, 200, 400, 1000]
+
+# lambda jako funkcja anonimowa
+# mozłiwość  użycia w miejscu deklaracji
+print(f"Zastosowanie map(): {list(map(lambda x: x * 2, lista))}")
+print(f"Zastosowanie map(): {list(map(lambda x: x * 3, lista))}")
+print(f"Zastosowanie map(): {list(map(lambda x: x * 4, lista))}")
+# Zastosowanie map(): [3, 6, 42, 72, 150, 201, 240, 300, 600, 1500]
+# Zastosowanie map(): [4, 8, 56, 96, 200, 268, 320, 400, 800, 2000]
