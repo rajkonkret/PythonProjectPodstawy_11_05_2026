@@ -14,8 +14,15 @@ all_params(1, 2, 3, 4)
 all_params(1, 2, c=8)
 all_params(1, 2, c=8, d=90)
 
+
 # / - oddziela parametry po nazwie od parametrów pozycyjnych
 # a, b - muszą zostać przekazane po pozycji !!!
 
 # all_params(a=1, b=2, c=3, d=4)
 # TypeError: all_params() got some positional-only arguments passed as keyword arguments: 'a, b'
+
+def all_params_full(name, b, /, c=42, *args, d=67, **kwargs):
+    print(f"{name=}, {b=}")
+    print(f"{c=}, {d=}")
+    print(f"{args=}")
+    print(f"{kwargs=}")
