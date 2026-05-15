@@ -67,3 +67,11 @@ kur2.wydaj_odglos()
 or2.wydaj_odglos()
 # kokoko koko
 # Kier kier kir kir
+
+# polimorfizm - obiekty róznych klas maja wspolne metody poprzez kalsę Ptak
+lista = [or2, kur2]  # obiekty różnych klas
+
+for i in lista:
+    i.wydaj_odglos()
+    # Kier kier kir kir
+    # kokoko koko
