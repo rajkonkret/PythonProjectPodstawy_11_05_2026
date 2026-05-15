@@ -1,6 +1,7 @@
 import pandas as pd
 
-excel_data = pd.read_excel('dane.xlsx')
+# excel_data = pd.read_excel('dane.xlsx')
+excel_data = pd.read_excel('sales.xlsx')
 print(excel_data)
 #    Unnamed: 0 Sales Date Sales Person  Amount
 # 0           0 2018-05-12   Sila Ahmed   60000
