@@ -25,3 +25,10 @@ print(dane)
 # {'table': 'A', 'currency': 'dolar amerykański',
 # 'code': 'USD',
 # 'rates': [{'no': '093/A/NBP/2026', 'effectiveDate': '2026-05-15', 'mid': 3.6525}]}
+
+print("Waluta:", dane['currency'])
+print("Kod:", dane['code'])
+# Waluta: dolar amerykański
+# Kod: USD
+
+print("Kurs:", dane['rates'][0]['mid'])  # Kurs: 3.6525
