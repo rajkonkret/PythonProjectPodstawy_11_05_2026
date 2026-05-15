@@ -1,0 +1,2 @@
+chtgpt, claude, grok, copilot, gemini
+deepseek, qwen
