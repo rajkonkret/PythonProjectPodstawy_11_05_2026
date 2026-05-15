@@ -18,3 +18,6 @@ print(xml_str)
 # <root>
 # 	<product name="RADEK"/>
 # </root>
+
+with open('dane.xml', "w") as f:
+    f.write(xml_str)
