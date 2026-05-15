@@ -16,3 +16,7 @@ finally:
     if conn:
         conn.close()
         print("Podłaczenie zostało zamknięte")
+# Baza danych została podłączona
+# Podłaczenie zostało zamknięte
+
+# powerquery, powerbi, pgadmin, dbeaver, TablePlus, sqldeveloper
