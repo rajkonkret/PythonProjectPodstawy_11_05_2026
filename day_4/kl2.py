@@ -17,6 +17,11 @@ class Human:
         self.plec = plec
 
     # storzyc metody wypisz_wiek(), wypisz_wzrost()
+    def wypisz_wiek(self):
+        print(f"Mam {self.wiek} lat.")
+
+    def wypisz_wzrost(self):
+        print(f"Mam {self.wzrost} cm wzrostu.")
 
     def powitanie(self):
         print(f'Nazywam się: {self.imie}')
@@ -53,3 +58,19 @@ cz1.ruszaj()
 print(cz1)  # <__main__.Human object at 0x000001BE73BE6120>
 # po stworzeniu metody poisowej __str__
 # Radek, 45, 189
+
+cz1.wypisz_wiek()
+cz1.wypisz_wzrost()
+# Mam 45 lat.
+# Mam 189 cm wzrostu.
+
+cz2 = Human("Anna", 34, 170)
+print(cz2)
+cz2.powitanie()
+cz2.ruszaj()
+cz2.wypisz_wiek()
+cz2.wypisz_wzrost()
+# Nazywam się: Anna
+# Ruszył am w drogę
+# Mam 34 lat.
+# Mam 170 cm wzrostu.
