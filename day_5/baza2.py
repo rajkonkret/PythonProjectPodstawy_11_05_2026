@@ -30,6 +30,12 @@ try:
     for row in c.execute(select):
         print(row) # (1, 'Radek', 'raj@raj.pl', 1000.0)
 
+    update = """
+    UPDATE developers SET salary=11000 WHERE id=1;
+             """
+    c.execute(update)
+    conn.commit()
+
 except sqlite3.Error as e:
     print("Bład podłaczenia bazy danych:", e)
 finally:
