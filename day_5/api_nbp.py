@@ -32,3 +32,4 @@ print("Kod:", dane['code'])
 # Kod: USD
 
 print("Kurs:", dane['rates'][0]['mid'])  # Kurs: 3.6525
+# https://github.com/public-apis/public-apis
