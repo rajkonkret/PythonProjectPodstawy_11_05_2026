@@ -14,3 +14,14 @@ import requests
 # pip install requests
 
 url = "https://api.nbp.pl/api/exchangerates/rates/A/usd/"
+
+response = requests.get(url)
+print(response)  # <Response [200]>
+print(response.text)
+
+dane = response.json()
+print(type(dane))
+print(dane)
+# {'table': 'A', 'currency': 'dolar amerykański',
+# 'code': 'USD',
+# 'rates': [{'no': '093/A/NBP/2026', 'effectiveDate': '2026-05-15', 'mid': 3.6525}]}
