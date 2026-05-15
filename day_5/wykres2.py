@@ -1,4 +1,7 @@
 import matplotlib.pyplot as plt
+import mpld3
+
+# pip install mpld3
 
 labels = ["Jabłka", "Banany", "Winogrono", "Pomarańcza"]
 sizes = [30, 25, 20, 45]
@@ -15,6 +18,10 @@ plt.title("Wykres kołowy")
 
 plt.axis('equal')
 
+html = mpld3.fig_to_html(plt.gcf())
 plt.savefig("pie.png")
 
 plt.show()
+
+with open('pie.html', 'w') as f:
+    f.write(html)
